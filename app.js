@@ -9,7 +9,7 @@ var morgan = require('morgan');
 var app = express();
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/socialLogin');
+mongoose.connect(process.env.MONGOLAB_URI);
 
 app.set('view engine', 'jade');
 

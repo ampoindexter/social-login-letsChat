@@ -73,11 +73,6 @@ router.post('/github', function(req, res) {
 });
 
 
-/*
- |--------------------------------------------------------------------------
- | Login with Google
- |--------------------------------------------------------------------------
- */
 router.post('/google', function(req, res) {
   var accessTokenUrl = 'https://accounts.google.com/o/oauth2/token';
   var peopleApiUrl = 'https://www.googleapis.com/plus/v1/people/me/openIdConnect';
@@ -141,11 +136,7 @@ router.post('/google', function(req, res) {
   });
 });
 
-/*
- |--------------------------------------------------------------------------
- | Login with Facebook
- |--------------------------------------------------------------------------
- */
+
 router.post('/facebook', function(req, res) {
   var fields = ['id', 'email', 'first_name', 'last_name', 'link', 'name'];
   var accessTokenUrl = 'https://graph.facebook.com/v2.5/oauth/access_token';
@@ -211,11 +202,6 @@ router.post('/facebook', function(req, res) {
 });
 
 
-/*
- |--------------------------------------------------------------------------
- | Login with Twitter
- |--------------------------------------------------------------------------
- */
 router.post('/twitter', function(req, res) {
   var requestTokenUrl = 'https://api.twitter.com/oauth/request_token';
   var accessTokenUrl = 'https://api.twitter.com/oauth/access_token';
