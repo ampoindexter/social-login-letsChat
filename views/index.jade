@@ -3,18 +3,18 @@ html
   head
     meta(charset='UTF-8')
     title Social Login
-    link(href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.min.css' rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet')
     link(href='css/style.css', rel='stylesheet')
   body(ng-app='socialLogin')
     div(ng-controller='navCtrl')
-      button(ui-sref='home') home
+      button(ui-sref='home' class="btn btn-primary") home
 
       span(ng-if='!isAuthenticated()')
-        button(ui-sref='login') login
+        button(ui-sref='login' class="btn btn-info") login
 
       span(ng-if='isAuthenticated()')
-        button(ui-sref='profile') profile
-        button(ng-click='logout()') logout
+        button(ui-sref='profile' class="btn btn-info") profile
+        button(ng-click='logout()' class="btn btn-warning") logout
 
     ui-view
 
