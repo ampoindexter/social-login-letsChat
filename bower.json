@@ -1,8 +1,8 @@
 {
-  "name": "socialLogin",
-  "version": "0.0.0",
+  "name": "letsChat",
+  "version": "1.0.0",
   "authors": [
-    "Cade Nichols <cade@cadenichols.com>"
+    "Alicia Poindexter <alcampbel@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [

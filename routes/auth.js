@@ -11,12 +11,6 @@ var User = require('../models/user');
 
 // AUTH
 
-/*
- |--------------------------------------------------------------------------
- | Login with Github
- |--------------------------------------------------------------------------
- */
-
 router.post('/github', function(req, res) {
   var accessTokenUrl = 'https://github.com/login/oauth/access_token';
   var userApiUrl = 'https://api.github.com/user';
@@ -277,7 +271,7 @@ router.post('/twitter', function(req, res) {
             }
 
             var token = req.headers.authorization.split(' ')[1];
-            var payload = jwt.decode(token, process.env.TOKEN_SECRET);
+            var payload = jwt.decode(token, process.env.JWT_SECRET);
 
             User.findById(payload.sub, function(err, user) {
               if (!user) {

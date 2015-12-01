@@ -1,5 +1,5 @@
 {
-  "name": "socialLogin",
+  "name": "letsChat",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodingHouseFI/social-login.git"
+    "url": "https://github.com/ampoindexter/social-login-letsChat.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alicia Poindexter <alcampbel@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodingHouseFI/social-login/issues"
+    "url": "https://github.com/ampoindexter/social-login-letsChat/issues"
   },
-  "homepage": "https://github.com/CodingHouseFI/social-login#readme",
+  "homepage": "https://github.com/ampoindexter/social-login-letsChat.git",
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.13.3",

@@ -11,21 +11,14 @@ app.config(function($stateProvider, $urlRouterProvider, $authProvider) {
     .state('profile', { url: '/profile', templateUrl: 'partials/profile.html', controller: 'profileCtrl'})
 
     $authProvider.github({
-      clientId: 'a24f8ae4f7f98525f469'
+      clientId: 'a91cc25c9e7e4920f13a'
     });
     $authProvider.google({
-      clientId: '458863588800-tm5t0hu3l19lk5kkfbop7s61tpphcdv4.apps.googleusercontent.com'
+      clientId: '273183779465-d9nd09lo2df7iqt2ldg0fj86ckt955jj.apps.googleusercontent.com'
     });
     $authProvider.facebook({
-      clientId: '1493282791002039'
+      clientId: '1668844963358370'
     });
 
     $authProvider.twitter();
-
-    // $authProvider.live({
-    //   clientId: '000000004C173030',
-    //   authorizationEndpoint: 'https://login.live.com/oauth20_desktop.srf',
-    //   redirectUri: 'http://mylocalwebsite.net:3000'
-
-    // });
 });
