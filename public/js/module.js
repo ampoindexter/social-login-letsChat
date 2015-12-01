@@ -19,6 +19,5 @@ app.config(function($stateProvider, $urlRouterProvider, $authProvider) {
     $authProvider.facebook({
       clientId: '1668844963358370'
     });
-
     $authProvider.twitter();
 });
