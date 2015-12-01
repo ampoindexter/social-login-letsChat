@@ -3,6 +3,10 @@ html {
   text-align: center;
 }
 
+body {
+  background-color: #7403ab;
+}
+
 .avatar {
   max-width: 100px;
 }
